@@ -1,0 +1,108 @@
+h4 {
+    margin-bottom: .5rem;
+}
+
+.roll__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+button {
+    margin: 1.5rem 0 0;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+
+
+
+/* Dice Container */
+
+.dice__container {
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 12rem;
+
+}
+
+
+.dice {
+    padding: 4px;
+    background-color: black;
+    min-width: 3rem;
+    min-height: 3rem;
+    border-radius: 10%;
+    margin: .3rem 0;
+}
+
+
+.dot {
+    display: block;
+    min-width: 1rem;
+    min-height: 1rem;
+    max-height: 1rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/* First die */
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Second die */
+.two {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.two .dot:nth-of-type(2) {
+    align-self: flex-end;
+}
+
+/* Third die */
+.three {
+    display: flex;
+    justify-content: space-between;
+}
+
+.three .dot:nth-of-type(1) {
+    align-self: flex-end;
+}
+
+.three .dot:nth-of-type(2) {
+    align-self: center;
+}
+
+/* 4th, 5th, & 6th Die */
+
+
+.five .column:nth-of-type(2) {
+    justify-content: center;
+}
+
+.four,
+.five,
+.six {
+    display: flex;
+    justify-content: space-between;
+}
+
+.four .column,
+.five .column,
+.six .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
